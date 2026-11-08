@@ -1,6 +1,6 @@
 # License notices
 
-This repository holds no code or data of its own: its release v1 redistributes two upstream archives, unchanged. Below is what each license asks of someone who redistributes these files, and how this repository does it.
+This repository holds no code or data of its own: its release set-1 redistributes two upstream archives, unchanged. Below is what each license asks of someone who redistributes these files, and how this repository does it.
 
 This repository only redistributes; the files are provided as-is under their own licenses.
 

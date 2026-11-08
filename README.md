@@ -5,7 +5,7 @@ Byte-exact copies of the two files that the voice feature of Wombow for Windows 
 - the **sherpa-onnx v1.13.8** speech recognition runtime for Windows x64, and
 - NVIDIA's **Parakeet TDT 0.6B v2** English speech recognition model, as converted to ONNX and quantized to int8 by the sherpa-onnx project.
 
-They are the assets of release [v1](https://github.com/wombow-ai/pc-speech-assets/releases/tag/v1). This is not an official release of the sherpa-onnx project or of NVIDIA; for anything other than these exact files, use the upstream projects linked below.
+They are the assets of release [set-1](https://github.com/wombow-ai/pc-speech-assets/releases/tag/set-1). This is not an official release of the sherpa-onnx project or of NVIDIA; for anything other than these exact files, use the upstream projects linked below.
 
 ## What this is for
 
@@ -17,7 +17,7 @@ The app pins each file by its size and SHA-256, and refuses a file that does not
 
 The sherpa-onnx project publishes its models on a rolling release, `asr-models`, where a model that is exported again is uploaded under the same name and replaces the earlier file. That happened to the Parakeet package on 2026-11-07 at 05:47 UTC: the file at that address is now a new export with different bytes (482,440,461 bytes, SHA-256 `6fc4426b54aa549a0019b8a75b8dea59164e71790a37ac56a045ad57f915f714`), which an app pinned to the earlier file cannot accept.
 
-The files here are byte for byte the ones the app pins. This repository has immutable releases turned on: once v1 is published, its assets cannot be modified or deleted and its tag cannot be moved, so these bytes will not change.
+The files here are byte for byte the ones the app pins. This repository has immutable releases turned on: once set-1 is published, its assets cannot be modified or deleted and its tag cannot be moved, so these bytes will not change.
 
 ## Files
 
@@ -28,8 +28,8 @@ The files here are byte for byte the ones the app pins. This repository has immu
 
 Download:
 
-- https://github.com/wombow-ai/pc-speech-assets/releases/download/v1/sherpa-onnx-v1.13.8-win-x64-shared-MT-Release-no-tts.tar.bz2
-- https://github.com/wombow-ai/pc-speech-assets/releases/download/v1/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8.tar.bz2
+- https://github.com/wombow-ai/pc-speech-assets/releases/download/set-1/sherpa-onnx-v1.13.8-win-x64-shared-MT-Release-no-tts.tar.bz2
+- https://github.com/wombow-ai/pc-speech-assets/releases/download/set-1/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8.tar.bz2
 
 To check them, run one of these in the folder you downloaded them to, with [SHA256SUMS](SHA256SUMS) beside them: `sha256sum -c SHA256SUMS` (Linux), `shasum -a 256 -c SHA256SUMS` (macOS), or `Get-FileHash -Algorithm SHA256 <file>` (Windows PowerShell).
 
